@@ -1,5 +1,5 @@
 'use client';
-import { Dispatch, SetStateAction, createContext, useState } from 'react';
+import { useState } from 'react';
 import {
 	Aside,
 	ComingSoon,
@@ -9,16 +9,7 @@ import {
 	Navbar,
 	Section,
 } from './components';
-
-type VisibleSection = {
-	currentSection: string | any;
-	setCurrentSection: Dispatch<SetStateAction<string>> | any;
-};
-
-export const VisibleSection = createContext<VisibleSection>({
-	currentSection: 'Home',
-	setCurrentSection: () => {},
-});
+import { VisibleSection } from './context/ui/VisibleSection';
 
 const FixedComponents = () => {
 	return (

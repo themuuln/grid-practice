@@ -1,5 +1,5 @@
 'use client';
-import { VisibleSection } from '@/app/page';
+import { VisibleSection } from '@/app/context/ui/VisibleSection';
 import { useContext, useEffect, useState } from 'react';
 
 const NavButton = ({ item }: { item: any }) => {
