@@ -4,7 +4,7 @@ const Aside = () => {
 		<div className="col-span-1 row-span-6 bg-secondary text-white grid grid-cols-4 grid-rows-6">
 			{data?.map((item, index) => {
 				return (
-					<div key={index} className="col-span-6 row-span-1">
+					<div key={index} className="col-span-6 row-span-1 bg-primary">
 						<div className="flex items-center h-full">{item}</div>
 					</div>
 				);
