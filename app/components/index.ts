@@ -4,3 +4,4 @@ export { default as Main } from './main/Main';
 export { default as Aside } from './aside/Aside';
 export { default as Section } from './section/Section';
 export { default as Contact } from './contact/Contact';
+export { default as ComingSoon } from './comingSoon/ComingSoon';

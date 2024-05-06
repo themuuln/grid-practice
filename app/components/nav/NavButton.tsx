@@ -13,7 +13,7 @@ const NavButton = ({ item }: { item: any }) => {
 				onClick={() => {
 					setCurrentSection(item?.title);
 				}}
-				className={`w-full h-full border-b ${
+				className={`w-full h-full border-b-[2px] ${
 					currentSection === item?.title ? 'border-accent' : 'border-secondary'
 				} transition-all duration-150 flex items-center justify-start`}
 			>
@@ -24,7 +24,7 @@ const NavButton = ({ item }: { item: any }) => {
 						isHovering ? 'translate-x-2' : ''
 					} transition-transform text-3xl duration-150`}
 				>
-					{item?.title}
+					• {item?.title}
 				</p>
 			</button>
 		</div>
